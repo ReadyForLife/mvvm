@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>MVVM</title>
+        <script type="module">
+            import { MVVM } from "./js/Yu.js" 
+            console.log('loaded')
+            new MVVM({
+                el: '#container',
+                data: {
+                    name: '你好我叫玛卡巴卡',
+                    nametwo:'你好我叫唔西迪西'
+                },
+                methods: {},
+            })
+        </script>
+    </head>
+    <body>
+        
+        <div id="container">
+            <br>
+            <input type="text" v-model="name"/>
+            <div>{{ name }}</div>
+             <br>
+             <br>
+             
+            <div>{{ nametwo }}</div>
+        </div>
+
+        
+    </body>
+</html>
